@@ -1,22 +1,356 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="" />
-        <meta name="author" content="" />
-        <title>Freelancer - Start Bootstrap Theme</title>
-        <!-- Favicon-->
-        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
-        <!-- Font Awesome icons (free version)-->
-        <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
-        <!-- Google fonts-->
-        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
-        <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
-        <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="css/styles.css" rel="stylesheet" />
-    </head>
-    <body>
-        
-    </body>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rachid Ghenem Arias — Desarrollador .NET</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Mono:wght@300;400;500&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<nav>
+  <div class="nav-logo">R<span>.</span>GHENEM</div>
+  <ul>
+    <li><a href="#experience">Experiencia</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#projects">Proyectos</a></li>
+    <li><a href="#education">Formación</a></li>
+    <li><a href="#contact">Contacto</a></li>
+  </ul>
+</nav>
+
+<section class="hero" id="home">
+  <div class="hero-grid"></div>
+  <div class="hero-glow"></div>
+  <div class="hero-glow2"></div>
+
+  <div class="hero-split">
+
+    <!-- IZQUIERDA: nombre y descripción -->
+    <div class="hero-content">
+      <div class="hero-tag">Disponible para nuevas oportunidades</div>
+      <h1>
+        Rachid<br>
+        Ghenem<br>
+        <span class="accent-green">Arias</span>
+      </h1>
+      <p class="hero-sub">Desarrollador .NET & Backend</p>
+      <p class="hero-desc">
+        Programador multiplataforma enfocado en crear soluciones backend eficientes con .NET, C# y SQL Server. Apasionado por la arquitectura limpia y las APIs REST que escalan.
+      </p>
+      <div class="hero-actions">
+        <a href="#projects" class="btn-primary">Ver proyectos</a>
+        <a href="#contact" class="btn-outline">Contactar</a>
+      </div>
+    </div>
+
+    <!-- DERECHA: checker llamativo -->
+    <div class="hero-checker">
+      <div class="checker-glow-ring"></div>
+      <div class="checker-label">
+        <span class="checker-dot"></span>
+        HERRAMIENTA DE SEGURIDAD
+      </div>
+      <div class="checker-title">¿Han filtrado<br>tu contraseña?</div>
+      <div class="checker-subtitle">Comprueba si tu email aparece en alguna filtración de datos conocida</div>
+
+      <div class="checker-form">
+        <div class="checker-input-wrap">
+          <svg viewBox="0 0 24 24" class="checker-input-icon"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 7 10-7"/></svg>
+          <input type="email" id="pwned-email" class="checker-input" placeholder="tucorreo@ejemplo.com" autocomplete="off" />
+        </div>
+        <button class="checker-btn" id="pwned-btn" onclick="checkPwned()">
+          <span id="pwned-btn-text">Comprobar</span>
+          <svg id="pwned-spinner" class="pwned-spinner hidden" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2" stroke-dasharray="31.4" stroke-dashoffset="10"/></svg>
+        </button>
+      </div>
+
+      <div id="pwned-result" class="pwned-result hidden"></div>
+
+      <div class="checker-footer">
+        <svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        Tu email nunca se transmite completo · Powered by XposedOrNot
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section id="experience">
+  <div class="section-label reveal" data-num="01">
+    <h2>Experiencia</h2>
+  </div>
+
+  <div class="exp-item reveal">
+    <div class="exp-date">2023 — 2024</div>
+    <div>
+      <div class="exp-company">SFY</div>
+      <div class="exp-role">PROGRAMADOR JUNIOR</div>
+      <ul class="exp-tasks">
+        <li>Diseño e implementación de APIs REST y servicios backend escalables</li>
+        <li>Desarrollo y mantenimiento de aplicaciones con .NET (C#, ASP.NET, .NET Core)</li>
+        <li>Trabajo con bases de datos SQL Server: creación, optimización y mantenimiento</li>
+        <li>Participación activa en metodologías ágiles (Scrum, dailies, planning)</li>
+      </ul>
+      <div class="exp-highlight">
+        ✦ Mejora del rendimiento de búsquedas centralizando la lógica en una capa común de servicios
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="skills">
+  <div class="section-label reveal" data-num="02">
+    <h2>Habilidades</h2>
+  </div>
+
+  <div class="skills-grid">
+    <div class="skill-card reveal">
+      <div class="skill-category">Backend & Lenguajes</div>
+      <div class="skill-tags">
+        <span class="skill-tag">C#</span>
+        <span class="skill-tag">.NET Framework</span>
+        <span class="skill-tag">.NET Core</span>
+        <span class="skill-tag">ASP.NET MVC</span>
+        <span class="skill-tag">Entity Framework</span>
+      </div>
+    </div>
+
+    <div class="skill-card reveal">
+      <div class="skill-category">APIs & Autenticación</div>
+      <div class="skill-tags">
+        <span class="skill-tag">APIs REST</span>
+        <span class="skill-tag">JWT</span>
+        <span class="skill-tag">Autenticación & Roles</span>
+        <span class="skill-tag">Swagger</span>
+      </div>
+    </div>
+
+    <div class="skill-card reveal">
+      <div class="skill-category">Bases de datos</div>
+      <div class="skill-tags">
+        <span class="skill-tag">SQL Server</span>
+        <span class="skill-tag">SSMS</span>
+        <span class="skill-tag">Modelado de datos</span>
+        <span class="skill-tag">Consultas SQL</span>
+      </div>
+    </div>
+
+    <div class="skill-card reveal">
+      <div class="skill-category">Herramientas & Metodologías</div>
+      <div class="skill-tags">
+        <span class="skill-tag">GitHub</span>
+        <span class="skill-tag">Git</span>
+        <span class="skill-tag">Scrum / Agile</span>
+        <span class="skill-tag">Azure (AZ-900)</span>
+      </div>
+    </div>
+
+    <div class="skill-card reveal">
+      <div class="skill-category">Inteligencia Artificial</div>
+      <div class="skill-tags">
+        <span class="skill-tag">Claude</span>
+        <span class="skill-tag">ChatGPT</span>
+        <span class="skill-tag">GitHub Copilot</span>
+        <span class="skill-tag">Prompt Engineering</span>
+        <span class="skill-tag">AI-Assisted Dev</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="projects">
+  <div class="section-label reveal" data-num="03">
+    <h2>Proyectos</h2>
+  </div>
+
+  <!-- SCANNER DEMO - TARJETA GRANDE -->
+  <div class="scanner-card reveal">
+    <div class="scanner-card-left">
+      <div class="project-num" style="margin-bottom:1rem">000 — HERRAMIENTA DE SEGURIDAD</div>
+      <div class="project-name" style="font-size:1.8rem;margin-bottom:0.5rem">Nmap CVE Scanner</div>
+      <p class="project-desc">Escáner automático de red que detecta puertos abiertos, identifica versiones de servicios y cruza los resultados con la base de datos NVD para encontrar vulnerabilidades conocidas (CVEs).</p>
+      <ul class="project-features" style="margin-bottom:1.5rem">
+        <li>Escaneo completo de puertos con Nmap (-sCV)</li>
+        <li>Búsqueda automática de CVEs en NVD NIST</li>
+        <li>Filtrado por versión con CPE mapping</li>
+        <li>Informe HTML interactivo con score CVSS</li>
+        <li>Detección de exploits y catálogo KEV</li>
+      </ul>
+      <div class="project-footer" style="padding:0;border:none;margin-bottom:1.5rem">
+        <span class="tech-tag">Python</span>
+        <span class="tech-tag">Nmap</span>
+        <span class="tech-tag">NVD API</span>
+        <span class="tech-tag">CVE</span>
+        <span class="tech-tag">CVSS</span>
+        <span class="tech-tag">XML Parsing</span>
+      </div>
+      <button class="btn-primary" onclick="iniciarDemo()" id="demo-btn" style="border:none;cursor:pointer">▶ Lanzar demo interactiva</button>
+    </div>
+
+    <div class="scanner-card-right">
+      <div class="terminal" id="terminal">
+        <div class="terminal-bar">
+          <span class="t-dot" style="background:#ff5f57"></span>
+          <span class="t-dot" style="background:#febc2e"></span>
+          <span class="t-dot" style="background:#28c840"></span>
+          <span class="t-title">nmap_vuln_scanner.py</span>
+        </div>
+        <div class="terminal-body" id="terminal-body">
+          <div class="t-line cyan">╔══════════════════════════════════════════════╗</div>
+          <div class="t-line cyan">║     NMAP → CVE → EXPLOIT  SCANNER  v3        ║</div>
+          <div class="t-line cyan">╚══════════════════════════════════════════════╝</div>
+          <div class="t-line" style="margin-top:0.5rem">Introduce la IP o dominio a analizar:</div>
+          <div class="t-input-line">
+            <span class="t-prompt">→ </span>
+            <input id="scanner-ip" class="t-input" placeholder="ej: 45.33.32.156" maxlength="40" />
+            <button class="t-enter-btn" onclick="iniciarDemo()">ENTER</button>
+          </div>
+          <div id="terminal-output"></div>
+        </div>
+      </div>
+      <div id="scanner-result" class="scanner-result hidden"></div>
+    </div>
+  </div>
+
+  <div class="projects-grid" style="margin-top:1.5rem">
+    <div class="project-card reveal">
+      <div class="project-header">
+        <span class="project-num">001</span>
+        <div class="project-icon">📋</div>
+      </div>
+      <div class="project-body">
+        <div class="project-name">CheckATT</div>
+        <p class="project-desc">Aplicación para gestionar la asistencia de alumnos a clase, con sistema de roles y control de inasistencias.</p>
+        <ul class="project-features">
+          <li>Registro de asistencias, inasistencias y justificaciones</li>
+          <li>Sistema de roles: alumnos, profesores y administradores</li>
+          <li>APIs REST para comunicación frontend-backend</li>
+          <li>Base de datos SQL Server con modelado de datos completo</li>
+        </ul>
+      </div>
+      <div class="project-footer">
+        <span class="tech-tag">C#</span>
+        <span class="tech-tag">ASP.NET</span>
+        <span class="tech-tag">SQL Server</span>
+        <span class="tech-tag">REST API</span>
+        <span class="tech-tag">JWT</span>
+      </div>
+    </div>
+
+    <div class="project-card reveal">
+      <div class="project-header">
+        <span class="project-num">002</span>
+        <div class="project-icon">💸</div>
+      </div>
+      <div class="project-body">
+        <div class="project-name">ShareBites</div>
+        <p class="project-desc">Plataforma para dividir gastos entre usuarios con cálculo automático de balances y deudas compartidas.</p>
+        <ul class="project-features">
+          <li>Backend robusto con .NET Core y C#</li>
+          <li>Cálculo automático de balances y deudas entre usuarios</li>
+          <li>Acceso a datos con Entity Framework / EF Core</li>
+          <li>Pruebas funcionales y corrección de errores</li>
+        </ul>
+      </div>
+      <div class="project-footer">
+        <span class="tech-tag">C#</span>
+        <span class="tech-tag">.NET Core</span>
+        <span class="tech-tag">EF Core</span>
+        <span class="tech-tag">SQL Server</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="education">
+  <div class="section-label reveal" data-num="04">
+    <h2>Formación</h2>
+  </div>
+
+  <div class="education-grid">
+    <div class="edu-timeline">
+      <div class="edu-item reveal">
+        <div class="edu-year">2021 — 2023</div>
+        <div class="edu-title">Desarrollo de Aplicaciones Multiplataforma</div>
+        <div class="edu-school">Centre d'Estudis Politècnics — DAM</div>
+      </div>
+      <div class="edu-item reveal">
+        <div class="edu-year">2023 — 2024</div>
+        <div class="edu-title">Desarrollo de Aplicaciones Web</div>
+        <div class="edu-school">Centre d'Estudis Politècnics — DAW</div>
+      </div>
+      <div class="edu-item reveal">
+        <div class="edu-year">2025</div>
+        <div class="edu-title">Bootcamp .NET, SQL y C#</div>
+        <div class="edu-school">Fundación Esplai</div>
+      </div>
+      <div class="edu-item reveal">
+        <div class="edu-year">2025 — Actualidad</div>
+        <div class="edu-title">Máster en Ciberseguridad e Inteligencia Artificial</div>
+        <div class="edu-school">Evolve Academy</div>
+      </div>
+    </div>
+
+    <div class="edu-extras reveal">
+      <div class="edu-certs">
+        <div class="edu-extras-label">Certificaciones</div>
+        <div class="cert-badge">🏆 Microsoft Azure Fundamentals (AZ-900)</div>
+      </div>
+      <div class="edu-langs">
+        <div class="edu-extras-label">Idiomas</div>
+        <div class="lang-grid">
+          <div class="lang-item">
+            <div class="lang-name">Castellano</div>
+            <div class="lang-level">NATIVO</div>
+          </div>
+          <div class="lang-item">
+            <div class="lang-name">Catalán</div>
+            <div class="lang-level">NATIVO</div>
+          </div>
+          <div class="lang-item">
+            <div class="lang-name">Inglés</div>
+            <div class="lang-level">B2</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section id="contact">
+  <div class="contact-inner reveal">
+    <h2>¿Hablamos?</h2>
+    <p>Abierto a nuevas oportunidades laborales en Barcelona o en remoto. No dudes en contactarme.</p>
+    <div class="contact-links">
+      <a href="mailto:rachidjkl@gmail.com" class="contact-link">
+        <svg viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 7 10-7"/></svg>
+        rachidjkl@gmail.com
+      </a>
+      <a href="tel:+34652473018" class="contact-link">
+        <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.64 12.5 19.79 19.79 0 0 1 1.58 4a2 2 0 0 1 1.87-2.18h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 9.91a16 16 0 0 0 6.16 6.16l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        652 473 018
+      </a>
+      <a href="https://github.com" class="contact-link" target="_blank">
+        <svg viewBox="0 0 24 24"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+        GitHub
+      </a>
+      <a href="https://linkedin.com" class="contact-link" target="_blank">
+        <svg viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
+        LinkedIn
+      </a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>© 2025 Rachid Ghenem Arias — Desarrollador .NET</p>
+  <p>Barcelona, España</p>
+</footer>
+
+<script src="main.js"></script>
+</body>
 </html>
