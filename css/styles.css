@@ -1568,3 +1568,156 @@ footer p {
 @media (max-width: 900px) {
   .scanner-card { grid-template-columns: 1fr; }
 }
+
+/* ══════════════════════════════════
+   RESPONSIVE FIXES MÓVIL
+══════════════════════════════════ */
+@media (max-width: 600px) {
+
+  /* Risk badge — baja a nueva línea en vez de desbordarse */
+  .pwned-result > div > div:first-child {
+    flex-wrap: wrap;
+    gap: 0.6rem;
+  }
+
+  .pwned-risk-badge {
+    margin-left: 0 !important;
+    width: 100%;
+    text-align: center;
+  }
+
+  /* Stats — más pequeños y que caben en una fila */
+  .pwned-result-stats {
+    gap: 0.5rem;
+  }
+
+  .pwned-stat {
+    padding: 0.4rem 0.5rem;
+    min-width: 0;
+  }
+
+  .pwned-stat-num {
+    font-size: 1.1rem;
+  }
+
+  /* Breach cards — más compactas */
+  .breach-card-header {
+    flex-wrap: wrap;
+    gap: 0.4rem;
+  }
+
+  .breach-card-risk {
+    margin-left: 0;
+  }
+
+  /* Scanner card — columna única y sin cortes */
+  .scanner-card {
+    grid-template-columns: 1fr;
+    padding: 1.5rem;
+  }
+
+  .terminal-body {
+    min-height: 200px;
+    max-height: 260px;
+    font-size: 0.7rem;
+  }
+
+  .t-line {
+    font-size: 0.7rem;
+    word-break: break-all;
+  }
+
+  .t-input-line {
+    flex-wrap: wrap;
+    gap: 0.3rem;
+  }
+
+  .t-input {
+    width: 100%;
+    min-width: 0;
+  }
+
+  .t-enter-btn {
+    width: 100%;
+    padding: 0.4rem;
+  }
+
+  /* Resultado del scanner en móvil */
+  .sr-port-row {
+    grid-template-columns: 50px 1fr auto;
+    grid-template-rows: auto auto;
+    gap: 0.2rem 0.5rem;
+  }
+
+  .sr-port-svc {
+    display: none;
+  }
+
+  .sr-port-prod {
+    grid-column: 2;
+    font-size: 0.68rem;
+  }
+
+  .sr-badge {
+    grid-column: 3;
+    grid-row: 1 / 3;
+    align-self: center;
+    font-size: 0.58rem;
+  }
+
+  .sr-stat-num {
+    font-size: 1rem;
+  }
+
+  .sr-stat-lbl {
+    font-size: 0.5rem;
+  }
+
+  .sr-cve-item {
+    flex-direction: column;
+    gap: 0.2rem;
+  }
+
+  .sr-cve-id {
+    min-width: 0;
+  }
+
+  /* Hero checker en móvil */
+  .hero-checker {
+    padding: 1.5rem;
+  }
+
+  .checker-title {
+    font-size: 1.5rem;
+  }
+
+  /* Sección general en móvil */
+  section {
+    padding: 4rem 1.2rem;
+  }
+
+  .section-label h2 {
+    font-size: 1.8rem;
+  }
+
+  /* Projects grid */
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* Education grid */
+  .education-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  /* Nav */
+  nav {
+    padding: 1rem 1.2rem;
+  }
+
+  /* Hero */
+  .hero {
+    padding: 5rem 1.2rem 3rem;
+  }
+}
